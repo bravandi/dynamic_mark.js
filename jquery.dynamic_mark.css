@@ -1,0 +1,22 @@
+.cursor_before, .cursor_after {
+    /*display: inline-block;*/
+    /*width: 5px;*/
+    /*height: 10px;*/
+    width: 8px;
+    cursor: ew-resize;
+}
+
+.cursor_before {
+    content: url("cursor_left.png");
+    /*position: absolute;*/
+    /*margin: 0 0 0 -3px ;*/
+
+    margin-left: 3px;
+}
+
+.cursor_after {
+     content: url("cursor_right.png");
+    /*position: absolute;*/
+    /*margin: 0 4px 0 0;*/
+    margin-right: 3px;
+}
