@@ -8,14 +8,13 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
     <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" type="text/css"
           href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/superhero/bootstrap.min.css">
+
     <link rel="stylesheet" type="text/css" href="jquery.dynamic_mark.css"/>
-
-
     <script type="text/javascript" src="jquery.mark.js"></script>
     <script type="text/javascript" src="jquery.dynamic_mark.js"></script>
-
     <style type="text/css">
         body {
             margin: 15px;
@@ -49,9 +48,9 @@
     <script type='text/javascript'>//<![CDATA[
     $(function () {
 
-        dm = new $.dynamic_mark();
+        dm = new $.dynamic_mark(".context");
 
-        dm.markDynamicRanges($(".context"), [
+        dm.markDynamicRanges([
             {
                 start: 100,
                 length: 69
@@ -119,11 +118,12 @@
 </script>
 <h2><a href="https://markjs.io/" target="_blank">mark.js</a> example with jQuery</h2>
 <div class="panel panel-default">
-    <div class="panel-body context">It was a bright cold day in April, and the clocks
-        were striking thirteen. Winston Smith, his chin nuzzled into his breast in an effort to escape the vile wind,
-        slipped quickly through the glass doors of Victory Mansions, though not quickly enough to prevent a swirl of
-        gritty dust from entering along with him.
-    </div>
+    <pre contenteditable="true" id="context" class="panel-body context">It was a bright cold day in April, and the clocks
+were striking thirteen.
+Winston Smith, his chin nuzzled into his breast in an effort to escape the vile wind,
+slipped quickly through the glass doors of Victory Mansions, though not quickly enough to prevent a swirl of
+gritty dust from entering along with him.
+    </pre>
 </div>
 </body>
 </html>

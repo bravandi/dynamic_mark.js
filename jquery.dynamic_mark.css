@@ -20,3 +20,9 @@
     /*margin: 0 4px 0 0;*/
     margin-right: 3px;
 }
+
+.cursor_selected{
+    /*width: 15px;*/
+    background-color: aquamarine;
+    /*cursor: hand !important;*/
+}
